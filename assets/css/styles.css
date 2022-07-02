@@ -20,10 +20,6 @@ a:visited{
     color: #01b1ea;
 }
 
-a:hover{
-    color: #555555
-}
-
 /* CONTAINER */
 #container{
     width: 80%;
@@ -159,6 +155,38 @@ a:hover{
 
 
 /* FORMULARIOS */
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    background-color: #c9c9c9;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.precio-contenedor{
+    display: flex;
+    align-items: center;
+}
+
+.precio{
+    margin-right: 5px;
+    font-size: 14px;
+    color: #222;
+}
+
+.desc{
+    margin-right: 5px;
+    font-size: 13px;
+    color: #555;
+}
+
+form .input-precio{
+    width: 25% !important;
+}
+
 label,
 input[type="text"],
 input[type="password"],
@@ -199,10 +227,47 @@ button{
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    color: white;
-    background: #2979CD;
+    color: white !important;
+    background: dodgerblue;
     border: 1px solid #11608E;
     cursor: pointer;
+}
+
+.detalle-button{
+    width: fit-content;
+}
+
+.button-small{
+    width: 150px;
+    text-align: center;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    color: white !important;
+}
+
+.button-small:hover{
+    background-color: seagreen;
+}
+
+#prod{
+    width: 200px;
+}
+.mod-prod{
+    display: flex;
+}
+
+.button-mod{
+    flex-grow: 1;
+    margin: 0;
+}
+
+.button-delete{
+    flex-grow: 1;
+    margin: 0;
+}
+
+.button-delete:hover{
+    background-color: firebrick;
 }
 
 label,
@@ -239,12 +304,52 @@ input[type="submit"]{
 }
 
 /* PRODUCTOS */
+.contenedor-producto{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .product{
     width: 30%;
-    float: left;
+    height: 230px;
+    /* float: left; */
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
+}
+
+.detalle-contenedor{
+    width: 100%;
+    display: flex;
+}
+
+/* imagen en el campo de la de la compra */
+.detalle-img{
+    flex-basis: 500px;
+    flex-shrink: 0;
+}
+
+.detalle-p{
+    margin-bottom: 5px;
+}
+
+.detalle-text{
+    flex-basis: 400px;
+    padding-left: 20px;
+}
+
+.detalle-img img{
+    width: 100%;
+}
+
+.product a{
+    color: #222;
+    text-decoration: none;
+}
+
+.contenedor-img{
+    width: 100%;
+    height: 120px;
 }
 
 .product h2{
@@ -284,8 +389,7 @@ input[type="submit"]{
     margin-bottom: 24px;
     padding: 5px;
     border-radius: 5px;
-    background-color: rgb(60, 218, 58);
-    box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.5);
+    color:rgb(78, 232, 78);
     display: block;
 }
 
@@ -293,8 +397,62 @@ input[type="submit"]{
     margin-bottom: 24px;
     padding: 5px;
     border-radius: 5px;
-    background-color: red;
-    box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.5);
-    color: white;
+    color: red;
     display: block;
+}
+
+/* Tablas */
+
+table{
+    text-align: center;
+    width: 100%;
+    border: 1px solid #555;
+}
+
+td{
+    vertical-align: bottom;/*Para dejar el texto abajo en la celda*/
+    border-top: 1px solid black;
+    background-color: #11608E;
+    color: white;
+    padding: 2px;
+}
+
+/* carrito */
+.table-carrito{
+    border: unset;
+    margin-top: 40px;
+}
+
+.table-carrito th{
+    border-bottom: 1px solid black;
+}
+
+.table-carrito td{
+    border-top: unset;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 2px;
+}
+
+/* gestion de los productos */
+.img-gestion{
+    width: 150px;
+}
+
+/* Imagen en el campo de edicion */
+.img-edit{
+    width: 100px;
+}
+
+/* Completar compra */
+.completar-compra{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.completar-compra a{
+    margin: 0 15px 0 15px;
 }
