@@ -15,7 +15,7 @@
             <p class="detalle-p"><?= $prod->nombre ?></p>
             <p class="detalle-p"><?= $prod->descripcion ?></p>
             <p class="detalle-p"><?= $prod->precio ?> U$S</p>
-            <a href="<?=base_url?>carrito/add&id=<?=$prod->id?>" class="button detalle-button">Comprar</a>
+            <a href="<?=base_url?>carrito/add&id=<?=$prod->id?>" class="button detalle-button">Agregar a carrito</a>
         </div>
     </div>
 

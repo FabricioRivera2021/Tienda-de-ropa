@@ -266,7 +266,22 @@ button{
     margin: 0;
 }
 
+.button-up,
+.button-down{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.button-up:hover,
+.button-down:hover{
+    background-color: #11608E;
+}
+
 .button-delete:hover{
+    background-color: firebrick;
+}
+
+.button-red{
     background-color: firebrick;
 }
 
@@ -435,6 +450,12 @@ td{
     padding: 2px;
 }
 
+.unidades-carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* gestion de los productos */
 .img-gestion{
     width: 150px;
@@ -455,4 +476,34 @@ td{
 
 .completar-compra a{
     margin: 0 15px 0 15px;
+}
+
+/* estado del pedido en la vista de mis pedidos */
+
+tr .state{
+    background-color: rgb(119, 209, 200);
+}
+
+/* detalle pedido en MIS PEDIDOS */
+
+.detalle-pedido{
+    margin-top: 25px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.direccion-pedido,
+.datos-pedido,
+.datos-usu,
+.datos-fecha{
+    word-spacing: 2px;
+    line-height: 20px;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+.direccion-pedido ul li{
+    list-style: none;
 }

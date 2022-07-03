@@ -35,7 +35,7 @@
             <h3><?= $_SESSION['identity']->nombre . " " . $_SESSION['identity']->apellido ?></h3>
             <!--Como es un objeto se manda con -> -->
             <ul>
-                <li><a href="#">Mis pedidos</a></li>
+                <li><a href="<?=base_url?>pedido/misPedidos">Mis pedidos</a></li>
             </ul>
             <a href="<?= base_url ?>usuario/logout"><button class="logout">Cerrar Sesión</button></a>
 
@@ -46,7 +46,7 @@
             <!--Como es un objeto se manda con -> -->
             <ul>
                 <li><a href="<?= base_url ?>producto/gestion">Gestionar productos</a></li>
-                <li><a href="#">Gestionar pedidos</a></li>
+                <li><a href="<?=base_url?>pedido/gestion">Gestionar pedidos</a></li>
                 <li><a href="<?= base_url ?>categoria/index">Gestionar categorias</a></li>
             </ul>
             <a href="<?= base_url ?>usuario/logout"><button class="logout">Cerrar Sesión</button></a>
